@@ -4,7 +4,7 @@
   "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "watch": "webpack --watch",
     "start": "webpack serve --open",
     "build": "webpack"
@@ -21,9 +21,16 @@
   },
   "homepage": "https://github.com/adarachel/to-do#readme",
   "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/plugin-transform-modules-commonjs": "^7.19.6",
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^29.3.1",
     "cli": "^1.0.1",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
+    "jest": {
+      "testEnvironment": "jsdom"
+  },
     "style-loader": "^3.3.1",
     "webpack": "^5.75.0",
     "webpack-dev-server": "^4.11.1"
