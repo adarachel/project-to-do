@@ -2,7 +2,7 @@
 
 # To Do list: List Structure Project
 ## ONLINE VERSION:
-View live site: [LIVE DEMO](https://adarachel.github.io/to-do/dist/)
+View live site: [LIVE DEMO](https://adarachel.github.io/to-do/dist/index.html)
 ### Project Description:
  This is a project build of a simple HTML list of To Do tasks. This simple web page was built using webpack and served by a webpack dev server. Week 2, Module 2 Project.
  
