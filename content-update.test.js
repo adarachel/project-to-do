@@ -38,7 +38,7 @@
    renderTodos();
  });
  
- describe('Manipulate updates', () => {
+ describe('Manipulate update', () => {
    test('Update or edit the task description', () => {
      const newTask = new Todo('Its okay', false, 1);
      todoArray.updateTodo(1, newTask);
@@ -47,23 +47,19 @@
      renderTodos();
      expect(todoArray.getAllTodos()[1].description).toBe('Its okay');
    });
- 
-   test('check the localStorage for updates', () => {
-     expect(localStorage.store[0].description).toBe('Its okay');
-   });
- 
+
    test('check completed status', () => {
      todoArray.changeCompleted(1);
      renderTodos();
      expect(todoArray.getAllTodos()[0].completed).toBe(true);
    });
  
-   test('check dom element is checked completed checkbox', () => {
+   test('check dom element is checked completed in checkbox', () => {
      const checkbox = document.querySelectorAll('input[type="checkbox"]');
      expect(checkbox[0].checked).toBe(true);
    });
  
-   test('Clearing all completed tasks', () => {
+   test('Clear all completed tasks', () => {
      todoArray.clearAllTodos();
      renderTodos();
      expect(todoArray.getAllTodos().length).toBe(2);
